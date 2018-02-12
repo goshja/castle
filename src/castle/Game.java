@@ -15,7 +15,7 @@ public class Game {
         	{
         		Game.this.goRoom(value);
         	}
-        });
+        }); //使用新的匿名HandlerGo类来用访问Game类的内部对象
     	handlers.put("bye", new HandlerBye()); 
         handlers.put("help", new HandlerHelp());
         createRooms();
